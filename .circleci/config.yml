@@ -9,6 +9,8 @@ jobs:
       - checkout
       # - run: ssh -oStrictHostKeyChecking=no -v $USER@$IP "./deploy.sh"
       - run: echo 'Hello, Windows'
+      - run: cd ~/auto.www
+      - run: cat test
 
 # Orchestrate our job run sequence
 workflows:
